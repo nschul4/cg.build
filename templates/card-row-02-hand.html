@@ -1,0 +1,12 @@
+<div class="card-holder" ng-style="{visibility: card.type === 'blank' && 'hidden' || 'visible'}">
+    <div class="card">
+        {{card.title}}
+        <p/>
+        {{card.text}}
+        <p/>
+        {{card.footer}}
+    </div>
+    <div class="button-holder">
+        <div class="button" ng-click="clickPlay(card)">play</div>
+    </div>
+</div>

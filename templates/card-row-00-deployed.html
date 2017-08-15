@@ -1,0 +1,12 @@
+<div class="card-holder" ng-style="{visibility: card.type === 'blank' && 'hidden' || 'visible'}">
+    <div ng-class="card.type === 'exhausted' && { card: true, 'exhausted-card': true } || { card: true }">
+        {{card.title}}
+        <p/>
+        {{card.text}}
+        <p/>
+        {{card.footer}}
+    </div>
+    <div class="button-holder">
+        <div class="button" ng-style="{visibility: card.type === 'exhausted' && 'hidden' || 'visible'}" ng-click="clickExhaust(card)">exhaust</div>
+    </div>
+</div>

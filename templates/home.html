@@ -1,0 +1,29 @@
+<div class="container">
+
+    <div class="card-row">
+        <div class="card-row-label">deployed</div>
+        <div class="card-row-slot" ng-repeat="card in cards.deployed" ng-include="'templates/card-row-00-deployed.html'">
+        </div>
+        <br/>
+    </div>
+
+    <br/>
+
+    <div class="card-row">
+        <div class="card-row-label">played</div>
+        <div class="card-row-slot" ng-repeat="card in cards.played" ng-include="'templates/card-row-01-played.html'">
+        </div>
+        <br/>
+    </div>
+
+    <br/>
+
+    <div class="card-row">
+        <div class="card-row-label">hand</div>
+        <div class="card-row-slot" ng-repeat="card in cards.hand" ng-include="'templates/card-row-02-hand.html'">
+        </div>
+        <br/>
+    </div>
+
+</div>
+<!-- /.container -->
