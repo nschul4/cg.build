@@ -8,7 +8,7 @@ div {
 
 .card-row {
 	border: 1px solid black;
-	height: 220px;
+	height: 166px;
 	overflow: auto;
 	white-space: nowrap;
 }
