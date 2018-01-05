@@ -8,7 +8,9 @@ div {
 
 .card-row {
 	border: 1px solid black;
-	height: 165px;
+	height: 166px;
+	/*overflow: auto;*/
+	/*white-space: nowrap;*/
 }
 
 .card-row-label {
@@ -18,16 +20,23 @@ div {
 
 .card-row-slot {
 	display: inline-block;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
 	padding-left: 5px;
 	padding-right: 5px;
 	background: skyblue;
-	margin-left: 5px;
+	margin-left: 14px;
 }
 
 .card-holder {
 	margin-top: 2px;
+}
+
+.card-holder-hidden {
+	visibility: hidden;
+}
+
+.card-holder_zoomed_in {
+	margin-top: 4px;
+	text-align: center;
 }
 
 .card {
@@ -41,6 +50,18 @@ div {
 	background: white;
 }
 
+.card_zoomed_in {
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 30px;
+	height: 300px;
+	width: 200px;
+	overflow: hidden;
+	padding: 10px;
+	background: white;
+	margin: 0 auto;
+}
+
 .button-holder {
 	display: inline-block;
 }
@@ -51,6 +72,7 @@ div {
 	border-radius: 3px;
 	color: black;
 	margin-bottom: 5px;
+	padding: 1px;
 }
 
 .card-row-slot.ng-enter
@@ -70,7 +92,7 @@ div {
 	opacity: 1;
 }
 
-.exhausted-card {
+.card-exhausted {
 	-webkit-transform: rotate(90deg); /* Safari and Chrome */
 	-moz-transform: rotate(90deg); /* Firefox */
 	-ms-transform: rotate(90deg); /* IE 9 */

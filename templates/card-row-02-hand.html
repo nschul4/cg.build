@@ -1,5 +1,5 @@
-<div class="card-holder" ng-style="{visibility: card.type === 'blank' && 'hidden' || 'visible'}">
-    <div class="card">
+<div class="card-holder" ng-class="card.type === 'blank' && { 'card-holder-hidden': true } || {}">
+    <div class="card" ng-click="showCardDialog(card)">
         {{card.title}}
         <p/>
         {{card.text}}
@@ -7,6 +7,10 @@
         {{card.footer}}
     </div>
     <div class="button-holder">
+        <div class="button card-holder-hidden" ng-click="clickExhaust(card)">exhaust</div>
+        <br/>
+        <div class="button card-holder-hidden" ng-click="clickDeploy(card)">deploy</div>
+        <br/>
         <div class="button" ng-click="clickPlay(card)">play</div>
     </div>
 </div>
