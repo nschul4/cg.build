@@ -35,31 +35,36 @@ div {
 }
 
 .card-holder_zoomed_in {
-	margin-top: 4px;
+	margin-top: 6px;
 	text-align: center;
 }
 
 .card {
 	display: inline-block;
 	border: 1px solid black;
+	overflow: hidden;
+	text-align: left;
+	background: white;
+
 	border-radius: 15px;
+	font-size: 12px;
 	height: 150px;
 	width: 100px;
-	overflow: hidden;
 	padding: 5px;
-	background: white;
 }
 
 .card_zoomed_in {
 	display: inline-block;
 	border: 1px solid black;
+	overflow: hidden;
+	text-align: left;
+	background: white;
+
 	border-radius: 30px;
+	font-size: 24px;
 	height: 300px;
 	width: 200px;
-	overflow: hidden;
 	padding: 10px;
-	background: white;
-	margin: 0 auto;
 }
 
 .button-holder {

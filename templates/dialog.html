@@ -1,21 +1,22 @@
-<md-dialog aria-label="List dialog Foo">
-    <md-dialog-content>
-        <div class="card-holder_zoomed_in">
-            <div class="card_zoomed_in">
-                {{items.title}}
-                <p/>
-                {{items.text}}
-            </div>
+<md-dialog>
+    <div class="card-holder_zoomed_in">
+        <div class="card_zoomed_in">
+            {{items.title}}
+            <p/>
+            {{items.text}}
         </div>
-        <md-dialog-actions>
-            <md-button ng-click="closeDialog()" class="md-primary">
-                Close Dialog
-            </md-button>
-            <md-button ng-click="closeDialog()" class="md-primary">
-                Foo
-            </md-button>
-            <md-button ng-click="closeDialog()" class="md-primary">
-                Bar
-            </md-button>
-        </md-dialog-actions>
+    </div>
+    <div>
+        <md-button ng-click="closeDialog()" class="md-primary">
+            Close
+        </md-button>
+        <!--
+        <md-button ng-click="closeDialog()" class="md-primary">
+            Foo
+        </md-button>
+        <md-button ng-click="closeDialog()" class="md-primary">
+            Bar
+        </md-button>
+        -->
+    </div>
 </md-dialog>
