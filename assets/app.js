@@ -76167,7 +76167,7 @@ angular.module('app.cgController', [])
                     'ngRoute'
 ])
 
-  .constant('TPL_PATH', '/templates')
+  .constant('TPL_PATH', './templates')
 
   .config(function($routeProvider, TPL_PATH) {
     $routeProvider.when('/',{
