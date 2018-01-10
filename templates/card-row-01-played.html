@@ -1,5 +1,5 @@
 <div class="card-holder" ng-class="card.type === 'blank' && { 'card-holder-hidden': true } || {}">
-    <div class="card" ng-class="card.type === 'exhausted' && { 'card-exhausted': true } || {}">
+    <div class="card" ng-click="showCardDialog(card)" ng-class="card.type === 'exhausted' && { 'card-exhausted': true } || {}">
         {{card.title}}
         <p/>
         {{card.text}}
